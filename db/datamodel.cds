@@ -19,6 +19,8 @@ context master1 {
         COMPANY_NAME: String(250);
     }
 
+    
+
     entity address {
         key NODE_KEY: Guid;
         CITY: String(44);
