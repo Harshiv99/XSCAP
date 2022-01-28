@@ -6,11 +6,13 @@
 
 //}
 
-using { anubhav.db.master1, anubhav.db.transaction ,anubhav.db.CDSViews} from '../db/datamodel';
+using { anubhav.db.master1, anubhav.db.transaction ,anubhav.db.CDSViews,CV_PURCV} from '../db/datamodel';
 
 
 service CatalogService@(path:'/CatalogService') {
 
+function sleep() returns Boolean;   
+   
     entity EmployeeSet as projection on master1.employees;
 
     entity AddressSet as projection on master1.address;
@@ -38,4 +40,7 @@ service CatalogService@(path:'/CatalogService') {
     //entity ProductAggregation as projection on CDSViews.CProductValuesView excluding{
           // ProductId
           // };
+
+     entity PerchaseOrders as projection on CV_PURCV;
+
 }

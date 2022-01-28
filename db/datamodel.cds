@@ -1,10 +1,12 @@
-namespace anubhav.db;
+//namespace anubhav.db;
 
 using { cuid, managed, temporal, Currency } from '@sap/cds/common';
 using { anubhav.common } from './commons';
 
 type Guid : String(32);
 
+context anubhav.db {
+    
 
 context master1 {
     entity businesspartner {
@@ -195,4 +197,28 @@ context CDSViews {
             round(sum(PO_ORDERS.GrossAmount),2) as ![POGrossAmount]: Decimal(10, 2)
         }
         group by ProductId,Country,PO_ORDERS.CurrencyCode;
+
+}
+
+@cds.persistence.calcview
+@cds.persistence.exists 
+Entity ![CV_PURCV] {
+key     ![ID]: String(36)  @title: 'ID: ID' ; 
+key     ![VALIDFROM]: Timestamp  @title: 'VALIDFROM: VALIDFROM' ; 
+key     ![VALIDTO]: Timestamp  @title: 'VALIDTO: VALIDTO' ; 
+key     ![NAMEFIRST]: String(40)  @title: 'NAMEFIRST: NAMEFIRST' ; 
+key     ![NAMEMIDDLE]: String(40)  @title: 'NAMEMIDDLE: NAMEMIDDLE' ; 
+key     ![NAMELAST]: String(40)  @title: 'NAMELAST: NAMELAST' ; 
+key     ![NAMEINITIALS]: String(40)  @title: 'NAMEINITIALS: NAMEINITIALS' ; 
+key     ![SEX]: String(1)  @title: 'SEX: SEX' ; 
+key     ![LANGUAGE]: String(1)  @title: 'LANGUAGE: LANGUAGE' ; 
+key     ![PHONENUMBER]: String(30)  @title: 'PHONENUMBER: PHONENUMBER' ; 
+key     ![EMAIL]: String(255)  @title: 'EMAIL: EMAIL' ; 
+key     ![LOGINNAME]: String(12)  @title: 'LOGINNAME: LOGINNAME' ; 
+key     ![CURRENCY_CODE]: String(3)  @title: 'CURRENCY_CODE: CURRENCY_CODE' ; 
+key     ![SALARYAMOUNT]: Decimal(15, 2)  @title: 'SALARYAMOUNT: SALARYAMOUNT' ; 
+key     ![ACCOUNTNUMBER]: String(16)  @title: 'ACCOUNTNUMBER: ACCOUNTNUMBER' ; 
+key     ![BANKID]: String(20)  @title: 'BANKID: BANKID' ; 
+key     ![BANKNAME]: String(64)  @title: 'BANKNAME: BANKNAME' ; 
+}
 

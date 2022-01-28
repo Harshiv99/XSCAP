@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_PURCV" applyPrivilegeType="NONE" dataCategory="DIMENSION" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
+<descriptions defaultDescription="CV_PURCV"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ANUBHAV_DB_MASTER1_EMPLOYEES">
+    <resourceUri>ANUBHAV_DB_MASTER1_EMPLOYEES</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+
+<logicalModel id="ANUBHAV_DB_MASTER1_EMPLOYEES">
+  <attributes>
+    <attribute id="ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="ID"/>
+    </attribute>
+    <attribute id="VALIDFROM" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALIDFROM"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="VALIDFROM"/>
+    </attribute>
+    <attribute id="VALIDTO" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALIDTO"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="VALIDTO"/>
+    </attribute>
+    <attribute id="NAMEFIRST" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAMEFIRST"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="NAMEFIRST"/>
+    </attribute>
+    <attribute id="NAMEMIDDLE" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAMEMIDDLE"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="NAMEMIDDLE"/>
+    </attribute>
+    <attribute id="NAMELAST" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAMELAST"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="NAMELAST"/>
+    </attribute>
+    <attribute id="NAMEINITIALS" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAMEINITIALS"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="NAMEINITIALS"/>
+    </attribute>
+    <attribute id="SEX" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SEX"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="SEX"/>
+    </attribute>
+    <attribute id="LANGUAGE" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANGUAGE"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="LANGUAGE"/>
+    </attribute>
+    <attribute id="PHONENUMBER" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PHONENUMBER"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="PHONENUMBER"/>
+    </attribute>
+    <attribute id="EMAIL" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EMAIL"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="EMAIL"/>
+    </attribute>
+    <attribute id="LOGINNAME" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOGINNAME"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="LOGINNAME"/>
+    </attribute>
+    <attribute id="CURRENCY_CODE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CURRENCY_CODE"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="CURRENCY_CODE"/>
+    </attribute>
+    <attribute id="SALARYAMOUNT" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SALARYAMOUNT"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="SALARYAMOUNT"/>
+    </attribute>
+    <attribute id="ACCOUNTNUMBER" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCOUNTNUMBER"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="ACCOUNTNUMBER"/>
+    </attribute>
+    <attribute id="BANKID" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BANKID"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="BANKID"/>
+    </attribute>
+    <attribute id="BANKNAME" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BANKNAME"/>
+      <keyMapping columnObjectName="ANUBHAV_DB_MASTER1_EMPLOYEES" columnName="BANKNAME"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+    
+  </shapes>
+</layout>
+</Calculation:scenario>
